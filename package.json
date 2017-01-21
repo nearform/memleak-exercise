@@ -1,0 +1,20 @@
+{
+  "name": "memleak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "with-climem": "CLIMEM=8999 node -r climem index.js",
+    "climem": "climem 8999",
+    "test": "autocannon -d 60 -c 500 -p 100 http://localhost:3000/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^0.16.0",
+    "climem": "^1.0.2",
+    "docker-namesgenerator": "0.0.1",
+    "handlebars": "^4.0.5"
+  }
+}
