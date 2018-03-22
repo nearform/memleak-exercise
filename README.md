@@ -2,7 +2,7 @@
 
 This application has a memory leak.
 
-You can use [node --inspect](https://nodejs.org/api/debugger.html#debugger_v8_inspector_integration_for_node_js)
+You can use [node --inspect --debug-brk](https://nodejs.org/api/debugger.html#debugger_v8_inspector_integration_for_node_js)
 heap snapshots (and diff) to track that down.
 
 The goal __is to identify and fix the memory leak__.
