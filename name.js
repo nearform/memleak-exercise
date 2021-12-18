@@ -4,7 +4,7 @@ const namesGenerator = require('docker-namesgenerator')
 const names = {}
 
 function name () {
-  const result = namesGenerator()
+  let result = namesGenerator()
   if (names[result]) {
     result += names[result]++
   }
