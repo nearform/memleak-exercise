@@ -1,10 +1,10 @@
 'use strict'
 
-var namesGenerator = require('docker-namesgenerator')
-var names = {}
+const namesGenerator = require('docker-namesgenerator')
+const names = {}
 
 function name () {
-  var result = namesGenerator()
+  let result = namesGenerator()
   if (names[result]) {
     result += names[result]++
   }

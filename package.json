@@ -8,14 +8,16 @@
     "with-climem": "CLIMEM=8999 node -r climem index.js",
     "climem": "climem 8999",
     "test": "autocannon -d 60 -c 100 -p 10 http://localhost:3000/",
-    "test-small": "autocannon -O 100 http://localhost:3000/"
+    "test-small": "autocannon -O 100 http://localhost:3000/",
+    "heapprofiler": "clinic heapprofiler --autocannon [ / -d 60 -c 100 -p 10 ] -- node index.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "autocannon": "^4.0.0",
-    "climem": "^1.0.2",
+    "autocannon": "^7.5.0",
+    "climem": "^1.0.3",
+    "clinic": "^10.0.0",
     "docker-namesgenerator": "0.0.1",
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.7.7"
   }
 }

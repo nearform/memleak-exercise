@@ -1,15 +1,15 @@
 'use strict'
 
-var path = require('path')
-var fs = require('fs')
+const path = require('path')
+const fs = require('fs')
 
-var Handlebars = require('handlebars')
+const Handlebars = require('handlebars')
 Handlebars.registerHelper('name', require('./name'))
 
-var template = Handlebars.compile(fs.readFileSync(path.join(__dirname, 'template')).toString())
+const template = Handlebars.compile(fs.readFileSync(path.join(__dirname, 'template')).toString())
 
-var http = require('http')
-var server = http.createServer(serve)
+const http = require('http')
+const server = http.createServer(serve)
 
 function serve (req, res) {
   res.end(template({}))
