@@ -2,7 +2,7 @@
 
 This application has a memory leak.
 
-You can use [clinic heapprofiler](https://clinicjs.org/heapprofiler/) to track the memory allocations.
+You can use [clinic heapprofiler](https://clinicjs.org/heapprofiler/) to track the memory allocations and [clinic doctor](https://clinicjs.org/doctor/) to diagnose the application.
 
 The goal __is to identify and fix the memory leak__.
 
